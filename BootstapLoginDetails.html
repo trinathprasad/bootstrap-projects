@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="container-fluid">
+    <button
+      class="btn btn-primary mt-3 p-2"
+      data-bs-toggle="modal"
+      data-bs-target="#login"
+    >
+      Login
+    </button>
+    <button
+      class="btn btn-success mt-3 p-2"
+      data-bs-toggle="modal"
+      data-bs-target="#details"
+    >
+      Details
+    </button>
+
+    <!-- Login Modal -->
+
+    <div class="modal fade" id="login">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h2><span class="bi bi-person"></span>User Login</h2>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div>
+                <label for="userName">User Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter username"
+                />
+              </div>
+              <div>
+                <label for="email">Email ID</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter email"
+                />
+              </div>
+              <div>
+                <label for="designation">Designation</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter your role"
+                />
+              </div>
+              <div>
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Enter password"
+                />
+              </div>
+              <div class="form-check mt-2">
+                <input type="checkbox" class="form-check-input" id="remember" />
+                <label class="form-check-label" for="remember"
+                  >Remember Me</label
+                >
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Login</button>
+            <button class="btn btn-danger" data-bs-dismiss="modal">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Details Modal -->
+
+    <div class="modal fade" id="details">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Header -->
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title">
+              <span class="bi bi-info-circle"></span> User Details
+            </h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body">
+            <table class="table table-bordered">
+              <tr>
+                <th>Name</th>
+                <td>Trinath Prasad Mohanty</td>
+              </tr>
+              <tr>
+                <th>Email</th>
+                <td>trinath.mohanty@gmail.com</td>
+              </tr>
+              <tr>
+                <th>Role</th>
+                <td>Fullstack Java Developer</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Footer -->
+          <div class="modal-footer">
+            <button class="btn btn-danger" data-bs-dismiss="modal">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../node_modules/jquery//dist//jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
